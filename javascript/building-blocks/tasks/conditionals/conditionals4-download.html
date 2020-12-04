@@ -33,7 +33,20 @@
     let pwdResult;
 
     // Add your code here
-
+    if(machineActive == false){
+      machineResult = "Machine is switched off, switch it on :(";
+      console.log(machineResult);
+    }else{
+      machineResult = "Machine is switched on.";
+      console.log(machineResult);
+      if(pwd == "cheese"){
+        pwdResult = "Logged in successfully.";
+        console.log(pwdResult);
+      }else{
+        pwdResult = "The login attempt was not successful :(";
+        console.log(pwdResult);
+      }
+    }
     // Don't edit the code below here!
 
     const section = document.querySelector('section');
